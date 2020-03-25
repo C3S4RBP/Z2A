@@ -1,0 +1,59 @@
+{
+    "general": 0,
+    "eventime": 300000,
+    "zabbix":
+            {
+                "host": "Server_database_zabbix",
+                "database": "Dabatase_zabbix",
+                "user": "Usuario_database_zabbix",
+                "pass": "Clave_database_zabbix",
+                "port": "Puerto_database_zabbix",
+                "provider": 0
+            },
+    "ITSM":
+            {
+                "urlapi": {
+                    "login": "http://SERVER_ARANDA/ASDKAPI/api/v8.6/user/login",
+                    "createCase": "http://SERVER_ARANDA/ASDKAPI/api/v8.6/item/add/%1$s",
+                    "updateCase": "http://SERVER_ARANDA/ASDKAPI/api/v8.6/item/update/%1$s/%2$s/%3$s",
+                    "readCase": "http://SERVER_ARANDA/ASDKAPI/api/v8.6/item/%1$s/%2$s/%3$s?level=0"
+                },
+                "user": "Usuario_Aranda",
+                "pass": "Clave_Aranda"
+            },
+    "casos":
+            {
+                "general":
+                        {
+                            "AuthorId": 0,
+                            "CustomerId": 0,
+                            "ProjectId": 0,
+                            "RegistryTypeId": 0
+                        },
+                "servicios":
+                        [
+                            {
+                                "Id": 1,
+                                "CategoryId": 0,
+                                "GroupId": 0,
+                                "ServiceId": 0,
+                                "SlaId": 0,
+                                "ItemType": 0,
+                                "UrgencyId": 0,
+                                "StateId": 0,
+                                "StateIdEnd": 0
+                            },
+                            {
+                                "Id": 2,
+                                "CategoryId": 0,
+                                "GroupId": 0,
+                                "ServiceId": 0,
+                                "SlaId": 0,
+                                "ItemType": 0,
+                                "UrgencyId": 0,
+                                "StateId": 0,
+                                "StateIdEnd": 0
+                            }
+                        ]
+            }
+}
